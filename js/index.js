@@ -7,9 +7,10 @@ let noteList;
 if (window.location.pathname === '/notes') {
   noteTitle = document.querySelector('.note-title');
   noteText = document.querySelector('.note-textarea');
-  saveNoteBtn = document.querySelector('.save-note');
+  saveNoteBtn = document.querySelector('.note-save');
   newNoteBtn = document.querySelector('.new-note');
   noteList = document.querySelectorAll('.list-container .list-group');
+  
 }
 
 // Show an element
@@ -70,6 +71,7 @@ const handleNoteSave = () => {
   const newNote = {
     title: noteTitle.value,
     text: noteText.value,
+    id: Math.floor(Math.random() * 99),
   };
   saveNote(newNote).then(() => {
     getAndRenderNotes();
