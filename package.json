@@ -3,11 +3,6 @@
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
-  "dependencies": {
-    "express": "^4.17.1",
-    "path": "^0.12.7"
-  },
-  "devDependencies": {},
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
@@ -20,5 +15,12 @@
   "bugs": {
     "url": "https://github.com/Naomi969/note-taker/issues"
   },
-  "homepage": "https://github.com/Naomi969/note-taker#readme"
+  "homepage": "https://github.com/Naomi969/note-taker#readme",
+  "dependencies": {
+    "body-parser": "^1.19.0",
+    "express": "^4.17.1",
+    "fs": "0.0.1-security",
+    "path": "^0.12.7",
+    "uuid": "^8.3.2"
+  }
 }
